@@ -83,11 +83,11 @@
   
 2. 데이터셋 선정 이유
   1. 다차원적 요인 포함
-    - 학업 요인(G1, G2, studytime, absences)
-    - 생활습관 요인(freetime, goout, Dalc, Walc)
-    - 가정환경 요인(Medu, Fedu, famsup)
-    - 건강 요인(health)
-     => 다양한 관점에서 성적에 영향을 주는 요소를 시각화와 통계적 탐색을 통해 분석 가능
+  - 학업 요인(G1, G2, studytime, absences)
+  - 생활습관 요인(freetime, goout, Dalc, Walc)
+  - 가정환경 요인(Medu, Fedu, famsup)
+  - 건강 요인(health)
+    -> 다양한 관점에서 성적에 영향을 주는 요소를 시각화와 통계적 탐색을 통해 분석 가능
 
 2. 시계열적 성격
   - G1(1차 성적), G2(2차 성적), G3(최종 성적) 데이터가 제공되어
