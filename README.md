@@ -179,7 +179,7 @@
 **1. school &rarr; 학교명별로 One-Hot 인코딩으로 변환**
 <div align="center"><img src="images/image-0.png" width="25%"/> </div>
 
-**2. 이진이지만 str타입으로 저장된 특성들을 int형 변환 및 적절한 특성명으로 바꿈**
+**2. str타입으로 저장된 이진값들을 int형으로 변환**
 <div align="center"><img src="images/image-3.png" width="40%"/> </div>
 
 **3. 해석하기 난해한 특성 제거**
@@ -248,17 +248,12 @@
 
 **4. 다양한 특성들이 성적에 기여하나 학생의 의지(failure, absences)와 학교의 서포트만으로도 성적향상 가능**
 
-🏆 성과 향상 요인 중요도 순위 (TOP 10):
+🏆 성과 향상 요인 중요도 순위 (TOP 5):
    1. failures       : 0.294 (높음)
    2. schoolsup      : 0.238 (중간)
    3. absences       : 0.213 (중간)
    4. parent_edu_combined: 0.195 (중간)
    5. Medu           : 0.190 (중간)
-   6. Walc           : 0.190 (중간)
-   7. goout          : 0.177 (중간)
-   8. Fedu           : 0.159 (중간)
-   9. Dalc           : 0.141 (낮음)
-  10. age            : 0.140 (낮음)
 
 ⭐ 우수 학생들의 공통 특징 (16점 이상, 40명):
   - famsup: 1 (60.0%)
@@ -271,7 +266,7 @@
 **3. 서로 다른 특성의 조합을 통해서도 분석이 가능**
 - 공부시간을 늘려도 결석이 많으면 효과가 제한적
 - 즉, 결석관리가 우선, 이후 공부시간 확보라는 전략적 메시지
-<div align="center"><img src="images/image-13.png" width="100%"/> </div>
+<div align="center"><img src="images/image-13.png" width="60%"/> </div>
 
 
 #  <div align="center"> 💡 프로젝트 기대 효과 </div>    
