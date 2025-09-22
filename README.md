@@ -82,7 +82,7 @@
 - “청소년 스트레스 인지율 역대 최고” (경향신문, 2024)
   
 
-<img width="317" height="237" alt="image2" src="https://github.com/user-attachments/assets/17a3ce62-868f-4e4a-8a4c-5a98cb19bd17" />
+<img width="634" height="474" alt="image2" src="https://github.com/user-attachments/assets/17a3ce62-868f-4e4a-8a4c-5a98cb19bd17" />
 
 - “학업 고민… 청소년 정신겅강에 빨간불 켠다” (원불교신문, 2023)
 - **코로나19 이후 교육 격차 심화**
