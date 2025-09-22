@@ -9,6 +9,13 @@
       <br/>
       <a href="https://github.com/MinJeung-Kim"><b>@MinJeung-Kim</b></a> 
     </td> 
+    <td align="center"> 
+      <img src="https://avatars.githubusercontent.com/u/227073315?v=4" width="100px;" alt="김종현"/>   
+      <br/>
+      김종현
+      <br/>
+      <a href="https://github.com/myem21"><b>@myem21</b></a> 
+    </td>
    <td align="center"> 
       <img src="https://avatars.githubusercontent.com/u/156564995?v=4" width="100px;" alt="박소희"/>   
       <br/>
@@ -23,13 +30,6 @@
       <br/>
       <a href="https://github.com/Hawon-Oh"><b>Hawon Oh</b></a> 
     </td> 
-    <td align="center"> 
-      <img src="https://avatars.githubusercontent.com/u/227073315?v=4" width="100px;" alt="정종현"/>   
-      <br/>
-      정종현
-      <br/>
-      <a href="https://github.com/myem21"><b>@myem21</b></a> 
-    </td>
   </tr>
 </table>
 </div>
@@ -70,6 +70,7 @@
 <br />
 
 #  <div align="center"> 🚩 프로젝트 주제 및 선정 배경  </div>  
+| 목표 : 어떤 요인이 학습 성과에 가장 큰 영향을 주는가?
 
 <br />
 
@@ -88,4 +89,6 @@
 
 <br />
 
-#  <div align="center"> 💡 프로젝트 기대 효과 </div>     
+#  <div align="center"> 💡 프로젝트 기대 효과 </div>    
+- 학습 데이터 분석을 통해 **학습자 특성별 차이, 성과 패턴, 이탈 요인** 등을 발견할 수 있다.
+- 이는 단순한 데이터 분석을 넘어 **학습 방법 개선·맞춤형 교육·정책 제안** 같은 응용 가치가 있다.
