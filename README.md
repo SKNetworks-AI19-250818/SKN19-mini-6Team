@@ -9,13 +9,6 @@
       <br/>
       <a href="https://github.com/MinJeung-Kim"><b>@MinJeung-Kim</b></a> 
     </td> 
-    <td align="center"> 
-      <img src="https://avatars.githubusercontent.com/u/227073315?v=4" width="100px;" alt="김종현"/>   
-      <br/>
-      김종현
-      <br/>
-      <a href="https://github.com/myem21"><b>@myem21</b></a> 
-    </td>
    <td align="center"> 
       <img src="https://avatars.githubusercontent.com/u/156564995?v=4" width="100px;" alt="박소희"/>   
       <br/>
@@ -30,6 +23,13 @@
       <br/>
       <a href="https://github.com/Hawon-Oh"><b>Hawon Oh</b></a> 
     </td> 
+    <td align="center"> 
+      <img src="https://avatars.githubusercontent.com/u/227073315?v=4" width="100px;" alt="정종현"/>   
+      <br/>
+      정종현
+      <br/>
+      <a href="https://github.com/myem21"><b>@myem21</b></a> 
+    </td>
   </tr>
 </table>
 </div>
