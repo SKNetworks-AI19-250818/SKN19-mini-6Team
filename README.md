@@ -28,7 +28,7 @@
       <br/> 
       오하원
       <br/>
-      <a href="https://github.com/Hawon-Oh"><b>Hawon Oh</b></a> 
+      <a href="https://github.com/Hawon-Oh"><b>@Hawon Oh</b></a> 
     </td> 
   </tr>
 </table>
