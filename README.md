@@ -12,7 +12,7 @@
     <td align="center"> 
       <img src="https://avatars.githubusercontent.com/u/227073315?v=4" width="100px;" alt="김종현"/>   
       <br/>
-      김종현
+    정종현
       <br/>
       <a href="https://github.com/myem21"><b>@myem21</b></a> 
     </td>
@@ -84,7 +84,7 @@
 
 <img width="634" height="474" alt="image2" src="https://github.com/user-attachments/assets/17a3ce62-868f-4e4a-8a4c-5a98cb19bd17" />
 
-- “학업 고민… 청소년 정신겅강에 빨간불 켠다” (원불교신문, 2023)
+- “학업 고민… 청소년 정신건강에 빨간불 켠다” (원불교신문, 2023)
 - **코로나19 이후 교육 격차 심화**
     
     원격수업, 등교일수 감소 → 학업 성취도 격차 확대, 부모 지원·사교육 접근성에 따른 성적 차이 심화.
