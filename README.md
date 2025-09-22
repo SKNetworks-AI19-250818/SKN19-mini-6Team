@@ -78,11 +78,11 @@
     
 - **청소년 정신건강·생활습관 악화 기사 근거**
 
-![image.png](attachment:09474bed-ea8d-46ac-b7f1-0f3fe4ea4789:image.png)
+[image.png](attachment:09474bed-ea8d-46ac-b7f1-0f3fe4ea4789:image.png)
 
 - “청소년 스트레스 인지율 역대 최고” (경향신문, 2024)
 
-![image.png](attachment:0c18d1ff-7036-40a9-88d3-26eb27921436:image.png)
+[image.png](attachment:0c18d1ff-7036-40a9-88d3-26eb27921436:image.png)
 
 - “학업 고민… 청소년 정신겅강에 빨간불 켠다” (원불교신문, 2023)
 - **코로나19 이후 교육 격차 심화**
