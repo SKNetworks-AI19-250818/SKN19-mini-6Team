@@ -177,43 +177,42 @@
 
 #  <div align="center"> 🛠️ 전처리 과정 </div>    
 **1. school &rarr; 학교명별로 One-Hot 인코딩으로 변환**
-<div align="center"><img src="images/image-0.png" width="30%"/> </div>
+<div align="center"><img src="images/image-0.png" width="25%"/> </div>
 
 **2. 이진이지만 str타입으로 저장된 특성들을 int형 변환 및 적절한 특성명으로 바꿈**
-<div align="center"><img src="images/image-1.png" width="30%"/> </div>
-<div align="center"><img src="images/image-3.png" width="45%"/> </div>
+<div align="center"><img src="images/image-3.png" width="40%"/> </div>
 
-**3. 해석하기 난해한 특성들 제거**
-- FJob & MJob: 부모직업에 others가 성적에 상관관계가 있더라도 해석을 못 하면 쓸모가 없음
-- reasons: 학교다니는 이유이나 각 범주별 차이점이 안 드러남
-<div align="center"><img src="images/image-4.png" width="50%"/> </div>
+**3. 해석하기 난해한 특성 제거**
+- FJob & MJob: 부모직업에 others가 많음. 상관관계가 있더라도 분석이 불가함.
+<div align="center"><img src="images/image-4.png" width="40%"/> </div> 
 
 **4. G1, G2, G3(시험점수)에 결손치가 없는 것 같지만 0으로 표기돼있음.**
-- 해당과목을 drop한 사람으로 출석기록 또한 0으로 표시됨. 즉 0은 시험점수가 0점임을 의미하지 않음.
-- G1, G2 점수가 비슷하니 평균값으로 G3를 대처하면 좋겠지만 출석기록은 중요한 지표이기에 중간에 drop한 학생들은 제거
+- 시험 안보면 출석기록도 0으로 표시됨. 해당과목을 drop하면 시험/출석은 0
+- 결손치 제거 후 시험성적은 정규분포 스케일링함.
 
-**5. 점수는 수치형 데이터이고 시험별 난이도가 상이함. &rarr; 정규분포를 따르므로 standard scaling**
-- ML 단계에선 target인 G3는 scaling하지 말아야하고 알고리즘 종류에 따라 G1, G2도 scaling해야할지 고민해야 함.
+**5. 결석률 이상치 발견했으나 유지**
+- 20 ~ 80번 결석한 학생이 존재. 값은 이상치이나 결석 많이 한 학생은 존재할 수 있기에 데이터입력 오류아님. 적은 개수도 아니라 EDA에 필요하다 판단
+- 과목을 drop한(시험안본) 학생은 자동으로 결석이 0이 됨. 즉 이상치조차 해당과목을 패스한 학생의 데이터
+<div align="center"><img src="images/image-12.png" width="100%"/> </div> 
+<div align="center"><img src="images/image-14.png" width="55%"/> </div>
 
-<div align="center"><img src="images/image-5.png" width="50%"/> </div>
-
-**6. 전처리 전/후 상관계수 매트릭스** (non numeric으로 빠졌었던 컬럼과 해석하기 난해한 컬럼을 제거했음)
-- 전처리 전 (밝은 하늘색은 0 ~ 0.1점대)
+**6. 전처리 전/후 상관계수 매트릭스**
+- 전처리 전
 
 <div align="center"><img src="images/image-7.png" width="100%"/> </div>
 
-- 전처리 후 (주황색 0.2 ~ 0.4점대)
+- 전처리 후 뚜렷해진 부분이 생겼으나 아직 분석이 어려움. &rarr; EDA로 넘어감
 <div align="center"><img src="images/image-8.png" width="100%"/> </div>
 <br />
 
 #  <div align="center"> 🌟 EDA 결과 </div>  
-**학생성적에는 다양한 특성들이 기여함. 여러 특성들간의 기여도 및 관계성 파악 후 이를 머신러닝하면 해당 학생의 성적을 예측이 가능함.**
+**학생성적에는 다양한 특성들이 기여. 특성들간의 기여도 및 관계성에 대해 분석해봄.**
 
-**1. 대체로 선형적이나 개수가 적은 수치에서 그래프가 튐. 추후 머신러닝의 확률이 낮다면 해당 특성에서 문제가 발생했을 수도 있음을 시사함.**
+**1. 대체로 선형적이나 개수가 적은 수치에서 그래프가 튐. 추후 머신러닝의 확률이 낮다면 해당 특성에서 문제가 발생했을 수도 있음을 시사**
 <div align="center"><img src="images/image-9.png" width="100%"/> </div>
 <br />
 
-**2. 부모 한쪽의 교육수준만 고려 시 학생성적에 큰 영향이 없으나 부모를 합쳐서 계산할 시 차이가 두드러짐.**
+**2. 부모 한쪽의 교육수준만 고려 시 학생성적에 큰 영향이 없으나 부모를 합쳐서 계산할 시 차이가 생김.**
 <div align="center"><img src="images/image-10.png" width="100%"/> </div>
 📊 가족 배경 요인과 성적 상관관계:
 
@@ -247,9 +246,9 @@
   - 결석의 부정적 영향: -2.46점
 
 
-**4. 다양한 특성들이 성적에 기여하나 학생의 의지(failure, absences)와 학교의 서포트만으로도 성적향상은 충분함. (단, 하위에서 중위권 해당)**
+**4. 다양한 특성들이 성적에 기여하나 학생의 의지(failure, absences)와 학교의 서포트만으로도 성적향상 가능**
 
-🏆 성과 향상 요인 중요도 순위 (TOP 14):
+🏆 성과 향상 요인 중요도 순위 (TOP 10):
    1. failures       : 0.294 (높음)
    2. schoolsup      : 0.238 (중간)
    3. absences       : 0.213 (중간)
@@ -260,10 +259,6 @@
    8. Fedu           : 0.159 (중간)
    9. Dalc           : 0.141 (낮음)
   10. age            : 0.140 (낮음)
-  11. fromCity       : 0.130 (낮음)
-  12. studytime      : 0.127 (낮음)
-  13. higher         : 0.113 (낮음)
-  14. internet       : 0.112 (낮음)
 
 ⭐ 우수 학생들의 공통 특징 (16점 이상, 40명):
   - famsup: 1 (60.0%)
@@ -272,6 +267,12 @@
   - internet: 1 (92.5%)
   - activities: 1 (52.5%)
   - higher: 1 (100.0%)
+
+**3. 서로 다른 특성의 조합을 통해서도 분석이 가능**
+- 공부시간을 늘려도 결석이 많으면 효과가 제한적
+- 즉, 결석관리가 우선, 이후 공부시간 확보라는 전략적 메시지
+<div align="center"><img src="images/image-13.png" width="100%"/> </div>
+
 
 #  <div align="center"> 💡 프로젝트 기대 효과 </div>    
 - 학습 데이터 분석을 통해 **학습자 특성별 차이, 성과 패턴, 이탈 요인** 등을 발견할 수 있다.
