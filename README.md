@@ -177,16 +177,16 @@
 
 #  <div align="center"> 🛠️ 전처리 과정 </div>    
 **1. school &rarr; 학교명별로 One-Hot 인코딩으로 변환**
-<div align="center"><img src="images/image-0.png" width="45%"/> </div>
+<div align="center"><img src="images/image-0.png" width="30%"/> </div>
 
 **2. 이진이지만 str타입으로 저장된 특성들을 int형 변환 및 적절한 특성명으로 바꿈**
-<div align="center"><img src="images/image-1.png" width="45%"/> </div>
-<div align="center"><img src="images/image-3.png" width="60%"/> </div>
+<div align="center"><img src="images/image-1.png" width="30%"/> </div>
+<div align="center"><img src="images/image-3.png" width="45%"/> </div>
 
 **3. 해석하기 난해한 특성들 제거**
 - FJob & MJob: 부모직업에 others가 성적에 상관관계가 있더라도 해석을 못 하면 쓸모가 없음
 - reasons: 학교다니는 이유이나 각 범주별 차이점이 안 드러남
-<div align="center"><img src="images/image-4.png" width="60%"/> </div>
+<div align="center"><img src="images/image-4.png" width="50%"/> </div>
 
 **4. G1, G2, G3(시험점수)에 결손치가 없는 것 같지만 0으로 표기돼있음.**
 - 해당과목을 drop한 사람으로 출석기록 또한 0으로 표시됨. 즉 0은 시험점수가 0점임을 의미하지 않음.
@@ -195,7 +195,7 @@
 **5. 점수는 수치형 데이터이고 시험별 난이도가 상이함. &rarr; 정규분포를 따르므로 standard scaling**
 - ML 단계에선 target인 G3는 scaling하지 말아야하고 알고리즘 종류에 따라 G1, G2도 scaling해야할지 고민해야 함.
 
-<div align="center"><img src="images/image-5.png" width="70%"/> </div>
+<div align="center"><img src="images/image-5.png" width="50%"/> </div>
 
 **6. 전처리 전/후 상관계수 매트릭스** (non numeric으로 빠졌었던 컬럼과 해석하기 난해한 컬럼을 제거했음)
 - 전처리 전 (밝은 하늘색은 0 ~ 0.1점대)
