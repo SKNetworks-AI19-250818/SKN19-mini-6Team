@@ -184,7 +184,7 @@
 <div align="center"><img src="images/image-3.png" width="45%"/> </div>
 
 **3. 해석하기 난해한 특성들 제거**
-- FJob & MJob: 부모직업에 others가 성적에 상관관계가 있더라도 해석을 못 하면 쓸모가 없음
+- FJob & MJob: 부모직업에 others와 같은 불분명한 직업 존재 -> 성적과의 상관관계 도출 어려움
 - reasons: 학교다니는 이유이나 각 범주별 차이점이 안 드러남
 <div align="center"><img src="images/image-4.png" width="50%"/> </div>
 
