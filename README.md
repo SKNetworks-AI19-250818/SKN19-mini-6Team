@@ -274,7 +274,7 @@
   - activities: 1 (52.5%)
   - higher: 1 (100.0%)
 
-** 5. 두 변수 상호작용 효과 시각화 (Heatmap)
+**5. 두 변수 상호작용 효과 시각화 (Heatmap)**
 
 <img width="649" height="590" alt="output2" src="https://github.com/user-attachments/assets/4abaa555-43c8-48b7-b0cd-111bbb2025a0" />
 
@@ -297,7 +297,9 @@
     > → **결석 관리가 우선, 그다음이 공부시간 확보**라는 전략적 메시지 도출 가능
     >
 
-** 6. 주말 음주와 성적에 히트맵 (Heatmap)
+**6. 주말 음주와 성적에 히트맵 (Heatmap)**
+
+
   <img width="664" height="490" alt="06" src="https://github.com/user-attachments/assets/26c73645-bca7-4bcd-8917-5aea730991b5" />
   
 | Walc (주말 음주) | freetime 1 | freetime 2 | freetime 3 | freetime 4 | freetime 5 | 관찰 포인트                        |
