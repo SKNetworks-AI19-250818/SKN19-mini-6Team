@@ -135,22 +135,20 @@
 - 데이터 출처 : [UCI Adult](https://archive.ics.uci.edu/datasets?skip=0&take=10&sort=desc&orderBy=NumHits&search=Student+Performance)
 - 파일 명 : `after_scaling.csv`, `before_scaling.csv` 
 
-## 🔍 전처리한 데이터셋 컬럼별 설명
+## 🔍 전처리한 데이터셋 컬럼설명
 
 | 순번 | 영문 컬럼명 | 한국어 번역 | 데이터 타입 | 상세 설명 |
 | --- | --- | --- | --- | --- |
-| 1 | school | 학교 | 범주형 | 학생이 다니는 학교 (GP: Gabriel Pereira, MS: Mousinho da Silveira) |
-| 2 | sex | 성별 | 이진 | 학생의 성별 (F: 여성, M: 남성) |
+| 1 | school_GP | GP학교 | 이진 | 학생이 다니는 학교 (GP: Gabriel Pereira) |
+| 1 | school_MS | MS학교 | 이진 | 학생이 다니는 학교 (MS: Mousinho da Silveira) |
+| 2 | sex | 성별 | 이진 | 학생의 성별 (0: 여성, 1: 남성) |
 | 3 | age | 나이 | 수치형 | 학생의 나이 (15-22세) |
-| 4 | address | 거주지역 | 이진 | 집 주소 유형 (U: 도시, R: 시골) |
-| 5 | famsize | 가족규모 | 이진 | 가족 크기 (LE3: 3명 이하, GT3: 3명 초과) |
-| 6 | Pstatus | 부모동거상태 | 이진 | 부모의 동거 상태 (T: 함께 거주, A: 별거) |
+| 4 | fromCity | 도시거주 | 이진 | 집 주소 유형 (0: 시골, 1: 도시) |
+| 5 | famMore3 | 가족규모 | 이진 | 가족 크기 (0: 3명 이하, 1: 3명 초과) |
+| 6 | liveTogether | 부모동거상태 | 이진 | 부모의 동거 상태 (1: 함께 거주, 0: 별거) |
 | 7 | Medu | 어머니교육수준 | 수치형 | 어머니 교육 (0: 무교육, 1: 초등교육, 2: 5-9학년, 3: 중등교육, 4: 고등교육) |
 | 8 | Fedu | 아버지교육수준 | 수치형 | 아버지 교육 (0: 무교육, 1: 초등교육, 2: 5-9학년, 3: 중등교육, 4: 고등교육) |
-| 9 | Mjob | 어머니직업 | 범주형 | 어머니 직업 (teacher: 교사, health: 보건, services: 공무원, at_home: 전업주부, other: 기타) |
-| 10 | Fjob | 아버지직업 | 범주형 | 아버지 직업 (teacher: 교사, health: 보건, services: 공무원, at_home: 전업주부, other: 기타) |
-| 11 | reason | 학교선택이유 | 범주형 | 학교 선택 이유 (home: 집과 가까움, reputation: 명성, course: 과정, other: 기타) |
-| 12 | guardian | 보호자 | 범주형 | 학생의 보호자 (mother: 어머니, father: 아버지, other: 기타) |
+| 12 | noParent | 부모보호자여부 | 범주형 | 학생의 부모가 보호자 (0: 부모가 보호자로 없음, 1: 부모가 보호자로 존재) |
 | 13 | traveltime | 통학시간 | 수치형 | 집에서 학교까지 시간 (1: 15분 미만, 2: 15-30분, 3: 30분-1시간, 4: 1시간 초과) |
 | 14 | studytime | 주간공부시간 | 수치형 | 주당 공부 시간 (1: 2시간 미만, 2: 2-5시간, 3: 5-10시간, 4: 10시간 초과) |
 | 15 | failures | 과거낙제횟수 | 수치형 | 이전 과락 횟수 (1-3회, 4: 3회 이상) |
