@@ -347,19 +347,30 @@
 
 # 👩‍🎓GMM 클러스터링 및 학습 루틴 추천
 <div align="center"><img width="590" height="490" alt="output" src="https://github.com/user-attachments/assets/bc38fd44-de0a-46e6-82df-944e24894f0d" />  </div>
+
+
 - 클러스터링 결과 시각화
 
 <div align="center"><img width="913" height="390" alt="output1" src="https://github.com/user-attachments/assets/cc475a50-c064-4c10-968e-1d0db0a7d028" /> </div>
 
+
 - 클러스터별 학생 수 
 cluster
-0     53
-1     39
-2    223
+
+0 - 53
+
+1 - 39
+
+2 - 223
+
+
+
+
 
 <div align="center"><img width="670" height="440" alt="output2" src="https://github.com/user-attachments/assets/acae85cd-89d4-4fff-af03-b129855360e7" /></div>
 
-📊 GMM 클러스터링 결과 요약 (k=3)
+
+### 📊 GMM 클러스터링 결과 요약 (k=3)
 1. 클러스터별 인원 수 & 성적 요약
 
 | 클러스터 | 라벨   | 학생 수 | 평균 G3 | 중앙값 G3 |
@@ -375,12 +386,14 @@ cluster
 
 - Mid 그룹: 전체의 약 12%, 중간권 학생군
 
+
+
 <div align="center"><img width="1555" height="409" alt="output3" src="https://github.com/user-attachments/assets/94fa41cc-2693-4dde-90ba-74a993faa245" /></div>
 
 
 <div align="center"><img width="770" height="449" alt="output4" src="https://github.com/user-attachments/assets/4dbb877a-c1bc-4d4a-8cde-62bf760a371b" /></div>
 
-2. 주요 특성 비교
+#### 2. 주요 특성 비교
 
 | 특성                | Low         | Mid        | High       | 인사이트 요약               |
 | ----------------- | ----------- | ---------- | ---------- | --------------------- |
@@ -392,9 +405,14 @@ cluster
 | 외출(goout)         | **4.04 ↑**  | 2.72       | 2.91       | Low 그룹의 외출 빈도 높음      |
 
 
+
+
+
+
+
 <div align="center"><img width="569" height="266" alt="스크린샷 2025-09-27 14 07 25" src="https://github.com/user-attachments/assets/b6955cdb-659b-409d-97e8-79dd446eb935" /></div>
 
-3. 클러스터별 맞춤 전략
+### 3. 클러스터별 맞춤 전략
 
 #### [Low 그룹]
 
