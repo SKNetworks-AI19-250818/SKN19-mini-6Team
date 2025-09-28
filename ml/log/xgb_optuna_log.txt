@@ -1,0 +1,15 @@
+2025-09-25 19:07:33 - === XGBoost Optuna Evaluation ===
+2025-09-25 19:07:33 - Best Params: {'n_estimators': 237, 'max_depth': 3, 'learning_rate': 0.015826476729008672, 'subsample': 0.6767636067567993, 'colsample_bytree': 0.8170286791935623, 'gamma': 1.5408561303241506, 'reg_alpha': 0.3600668856995675, 'reg_lambda': 0.6570269513594963, 'min_child_weight': 8}
+2025-09-25 19:07:33 - MAE: 1.769
+2025-09-25 19:07:33 - RMSE: 2.328
+2025-09-25 19:07:33 - R² Score: -0.015
+2025-09-27 11:04:15 - === XGBoost Optuna Evaluation ===
+2025-09-27 11:04:15 - Best Params: {'n_estimators': 119, 'max_depth': 4, 'learning_rate': 0.025468606404335348, 'subsample': 0.5070544287818559, 'colsample_bytree': 0.5595401394252664, 'gamma': 4.781560819789, 'reg_alpha': 0.7448694257732423, 'reg_lambda': 0.4575875275500041, 'min_child_weight': 2}
+2025-09-27 11:04:15 - MAE: 1.805
+2025-09-27 11:04:15 - RMSE: 2.290
+2025-09-27 11:04:15 - R² Score: 0.018
+2025-09-27 11:04:59 - === XGBoost Optuna Evaluation ===
+2025-09-27 11:04:59 - Best Params: {'n_estimators': 119, 'max_depth': 4, 'learning_rate': 0.025468606404335348, 'subsample': 0.5070544287818559, 'colsample_bytree': 0.5595401394252664, 'gamma': 4.781560819789, 'reg_alpha': 0.7448694257732423, 'reg_lambda': 0.4575875275500041, 'min_child_weight': 2}
+2025-09-27 11:04:59 - MAE: 1.805
+2025-09-27 11:04:59 - RMSE: 2.290
+2025-09-27 11:04:59 - R² Score: 0.018
