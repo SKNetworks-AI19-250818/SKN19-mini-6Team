@@ -13,10 +13,10 @@ def check_local_server():
     for url in urls_to_check:
         try:
             response = requests.get(url, timeout=5)
-            print(f"✅ {url} - 상태: {response.status_code}")
+            print(f"[SUCCESS] {url} - 상태: {response.status_code}")
             return True
         except:
-            print(f"❌ {url} - 연결 실패")
+            print(f"[ERROR] {url} - 연결 실패")
     return False
 
 def get_local_ip():
@@ -37,10 +37,10 @@ def check_local_network():
         url = f"http://{local_ip}:8000"
         try:
             response = requests.get(url, timeout=5)
-            print(f"✅ 로컬 네트워크 접근 성공: {url} - {response.status_code}")
+            print(f"[SUCCESS] 로컬 네트워크 접근 성공: {url} - {response.status_code}")
             return True
         except Exception as e:
-            print(f"❌ 로컬 네트워크 접근 실패: {url} - {e}")
+            print(f"[ERROR] 로컬 네트워크 접근 실패: {url} - {e}")
     return False
 
 def get_public_ip():
@@ -57,12 +57,12 @@ def check_port_listening():
         if sys.platform.startswith('win'):
             result = subprocess.run(['netstat', '-an'], capture_output=True, text=True)
             if ':8000' in result.stdout:
-                print("✅ 포트 8000이 열려있음")
+                print("[SUCCESS] 포트 8000이 열려있음")
                 return True
-        print("❌ 포트 8000이 열려있지 않음")
+        print("[ERROR] 포트 8000이 열려있지 않음")
         return False
     except:
-        print("⚠️ 포트 상태를 확인할 수 없음")
+        print("[ERROR] 포트 상태를 확인할 수 없음")
         return False
 
 def test_recommend_endpoint():
@@ -86,16 +86,16 @@ def test_recommend_endpoint():
     # 로컬에서 테스트
     try:
         response = requests.get("http://localhost:8000/recommend", params=test_params, timeout=5)
-        print(f"✅ 로컬 recommend 엔드포인트: {response.status_code}")
+        print(f"[SUCCESS] 로컬 recommend 엔드포인트: {response.status_code}")
         if response.status_code == 200:
             print(f"   응답: {response.json()}")
         return True
     except Exception as e:
-        print(f"❌ recommend 엔드포인트 실패: {e}")
+        print(f"[ERROR] recommend 엔드포인트 실패: {e}")
         return False
 
 def main():
-    print("🔍 FastAPI 서버 디버깅 시작")
+    print("서버 디버깅 중...")
     print("="*50)
     
     # 1. 로컬 서버 확인
@@ -103,8 +103,8 @@ def main():
     local_ok = check_local_server()
     
     if not local_ok:
-        print("\n❌ 로컬 서버가 실행되지 않고 있습니다!")
-        print("💡 해결방법:")
+        print("\n[ERROR] 로컬 서버가 실행되지 않고 있습니다!")
+        print("[FIX] 해결방법:")
         print("   uvicorn main:app --host 0.0.0.0 --port 8000")
         return
     
@@ -127,14 +127,14 @@ def main():
     print("\n5️⃣ recommend 엔드포인트 테스트")
     test_recommend_endpoint()
     
-    # 6. Postman 테스트 URL 제공
-    print("\n📬 Postman 테스트 URL:")
-    if local_ip:
-        print(f"   로컬 네트워크: http://{local_ip}:8000/recommend")
-    if public_ip:
-        print(f"   외부 접근: http://{public_ip}:8000/recommend")
+    # # 6. Postman 테스트 URL 제공
+    # print("\n Postman 테스트 URL:")
+    # if local_ip:
+    #     print(f"   로컬 네트워크: http://{local_ip}:8000/recommend")
+    # if public_ip:
+    #     print(f"   외부 접근: http://{public_ip}:8000/recommend")
     
-    print("\n📋 체크리스트:")
+    print("\n체크리스트:")
     print("   □ 서버가 0.0.0.0:8000으로 실행 중")
     print("   □ Windows 방화벽 8000 포트 허용")
     print("   □ 공유기 포트포워딩 설정")
