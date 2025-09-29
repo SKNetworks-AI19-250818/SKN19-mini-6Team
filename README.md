@@ -439,7 +439,10 @@ cluster
 
 - 현재 루틴 양호 → 심화 학습, 대회 준비, 자기주도 학습 기회 제공
 
-# 웹사이트 실행 결과
+# 웹사이트 소개 페이지
+<img width="100%" src="images/image-16.png" />
+
+### 학습 추천 AI 예시
 <img width="100%" src="images/image-15.png" />
 
 <br />
